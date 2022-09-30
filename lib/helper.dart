@@ -7,4 +7,4 @@ Color schoolColor=Color(0xFFF6316E);
 Color toiletColor=Color(0xFFBFE5FF);
 Color playColor=Color(0xFFF7422A);
 Color moreColor=Color(0xFFC51B0D);
-
+bool isPlaying = false;

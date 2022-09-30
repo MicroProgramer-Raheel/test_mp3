@@ -15,13 +15,8 @@ class ItemAudio extends StatefulWidget {
 }
 
 class _ItemAudioState extends State<ItemAudio> with TickerProviderStateMixin {
-  late AnimationController
-  iconController;
- // make sure u have flutter sdk > 2.12.0 (null safety)
-  bool isAnimated = false;
 
   bool showPlay = true;
-
   bool shopPause = false;
 
   AssetsAudioPlayer audioPlayer = AssetsAudioPlayer();
@@ -29,11 +24,11 @@ class _ItemAudioState extends State<ItemAudio> with TickerProviderStateMixin {
   void initState() {
     // TODO: implement initState
     super.initState();
-    iconController = AnimationController(
-        vsync: this, duration: Duration(milliseconds: 1000));
+
     audioPlayer.isPlaying.listen((event) {
       setState(() {
         showPlay = event;
+        isPlaying = event;
       });
     });
   }
@@ -41,9 +36,12 @@ class _ItemAudioState extends State<ItemAudio> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        audioPlayer
-          ..open(Audio(widget.play.url), volume: 10)
-          ..play();
+        if (!isPlaying){
+
+          audioPlayer
+            ..open(Audio(widget.play.url), volume: 10)
+            ..play();
+        }
       },
       child: Column(
         mainAxisSize: MainAxisSize.min,
