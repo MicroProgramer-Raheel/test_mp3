@@ -17,54 +17,6 @@ class Audio {
 
 final List<Audio> listPlay = [
   Audio(
-      url: "assets/audio/drink.mp3",
-      text:  Row(
-        children: [
-          Text(
-            " drink",
-            style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w600,
-                color: drinkColor),
-          ),
-
-        ],
-      ),
-      image: Container(
-        margin: EdgeInsets.all(5),
-        width: Get.width,
-        padding: EdgeInsets.symmetric(vertical: 5,horizontal: 10),
-        decoration: BoxDecoration(
-          color: drinkColor,
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: SvgPicture.asset(
-            "assets/svg/drink.svg"
-        ),
-      )),
-  Audio(
-      url: "assets/audio/car (1).mp3",
-      text:  Text(
-        " Car",
-        style: TextStyle(
-            fontSize: 22,
-            fontWeight: FontWeight.w600,
-            color: carColor),
-      ),
-      image: Container(
-        margin: EdgeInsets.all(5),
-        width: Get.width,
-        padding: EdgeInsets.symmetric(vertical: 5,horizontal: 10),
-
-        decoration: BoxDecoration(
-          color: carColor,
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: SvgPicture.asset(
-            "assets/svg/car.svg"
-        ),
-      )),
-  Audio(
       url: "assets/audio/eat.mp3",
       text:  Text(
         " eat",
@@ -161,7 +113,7 @@ final List<Audio> listPlay = [
         width: Get.width,
         decoration: BoxDecoration(
           image: DecorationImage(
-            fit: BoxFit.fitWidth,
+              fit: BoxFit.fitWidth,
               image: AssetImage("assets/image/school.png")
           ),
           borderRadius: BorderRadius.circular(12),
@@ -169,30 +121,112 @@ final List<Audio> listPlay = [
 
       )),
   Audio(
-      url: "assets/audio/more.mp3",
-      text:  Row(
-        children: [
-          Text(
-            " more",
-            style: TextStyle(
-                fontSize: 22, fontWeight: FontWeight.w600, color: moreColor),
-          ),
-
-        ],
+      url: "assets/audio/drink.mp3",
+      text:  Text(
+        " Drink",
+        style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.w600,
+            color: schoolColor),
       ),
       image: Container(
-        alignment: Alignment.center,
         margin: EdgeInsets.all(5),
         width: Get.width,
         decoration: BoxDecoration(
-          image: DecorationImage(
-              fit: BoxFit.contain,
-              image: AssetImage("assets/image/more.png")
-          ),
-          color: toiletColor,
           borderRadius: BorderRadius.circular(12),
+        ),
+        child: SvgPicture.asset("assets/svg/drink.svg"),
+
+      )),
+  Audio(
+      url: "assets/audio/biscuit.mp3",
+      text:  Text(
+        " Biscuit",
+        style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.w600,
+            color: playColor),
+      ),
+      image: Container(
+        margin: EdgeInsets.all(5),
+        width: Get.width,
+        padding: EdgeInsets.symmetric(vertical: 5,horizontal: 10),
+        decoration: BoxDecoration(
+          color: playColor,
+image: DecorationImage(
+    fit: BoxFit.fitWidth,
+
+    image: AssetImage("assets/image/biscuit.png")
+),
+
+borderRadius: BorderRadius.circular(12),
+        ),
+      )),
+  Audio(
+      url: "assets/audio/dean.mp3",
+      text:  Text(
+        " Dean",
+        style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.w600,
+            color: sleepColor),
+      ),
+      image: Container(
+        margin: EdgeInsets.all(5),
+        width: Get.width,
+        decoration: BoxDecoration(
+          color: sleepColor,
+image: DecorationImage(
+  fit: BoxFit.fitWidth,
+image: AssetImage("assets/image/dean.png")
+),
+
+borderRadius: BorderRadius.circular(12),
+        ),
+        padding: EdgeInsets.symmetric(vertical: 5,horizontal: 10),
+      )),
+  Audio(
+      url: "assets/audio/ipad.mp3",
+      text: const Text(
+        " Ipad",
+        style: TextStyle(
+            fontSize: 22, fontWeight: FontWeight.w600, color: Colors.black),
+      ),
+      image: Container(
+        margin: EdgeInsets.all(5),
+        width: Get.width,
+        decoration: BoxDecoration(
+          color: eatColor,
+          borderRadius: BorderRadius.circular(12),
+         image: DecorationImage(
+           image: AssetImage("assets/image/ipad.png")
+         )
         ),
         padding: EdgeInsets.symmetric(vertical: 5,horizontal: 10),
 
       )),
+  Audio(
+      url: "assets/audio/sad.mp3",
+      text:  Text(
+        " Sad",
+        style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.w600,
+            color: schoolColor),
+      ),
+      image: Container(
+        margin: EdgeInsets.all(5),
+        width: Get.width,
+        decoration: BoxDecoration(
+          // image: DecorationImage(
+          //     fit: BoxFit.fitWidth,
+          //     image
+          // ),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child:  SvgPicture.asset("assets/svg/sad.svg"),
+
+      )),
+
+
 ];

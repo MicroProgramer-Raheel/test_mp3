@@ -1,20 +1,21 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:test_mp3/helper.dart';
-import '../models/Audio.dart' as audioModel;
 
-class ItemAudio extends StatefulWidget {
-  audioModel.Audio play;
+import '../models/top_audio.dart';
 
+
+class ItemTopAudio extends StatefulWidget {
+  TopAudio play;
   @override
-  State<ItemAudio> createState() => _ItemAudioState();
+  _ItemTopAudioState createState() => _ItemTopAudioState();
 
-  ItemAudio({
+  ItemTopAudio({
     required this.play,
   });
 }
 
-class _ItemAudioState extends State<ItemAudio> with TickerProviderStateMixin {
+class _ItemTopAudioState extends State<ItemTopAudio> {
 
   bool showPlay = true;
   bool shopPause = false;
@@ -69,3 +70,4 @@ class _ItemAudioState extends State<ItemAudio> with TickerProviderStateMixin {
     super.dispose();
   }
 }
+

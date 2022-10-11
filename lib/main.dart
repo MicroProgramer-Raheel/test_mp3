@@ -6,8 +6,9 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:test_mp3/screen_audio.dart';
 
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  await Future.delayed(Duration(seconds: 2));
   runApp(const MyApp());
 }
 
