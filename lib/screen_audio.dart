@@ -1,3 +1,5 @@
+import 'package:test_mp3/helper.dart';
+
 import 'Audio/item_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:test_mp3/models/Audio.dart' as model;
@@ -36,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
+            Divider(color: Colors.grey,),
             Expanded(
               child: GridView.builder(
                 scrollDirection: Axis.vertical,
