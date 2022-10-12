@@ -1,3 +1,4 @@
+import 'package:custom_utils/custom_utils.dart';
 import 'package:test_mp3/helper.dart';
 
 import 'Audio/item_audio.dart';
@@ -38,7 +39,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
-            Divider(color: Colors.grey,),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.red,
+               boxShadow: [BoxShadow(color:eatColor,spreadRadius: 1)]
+              ),
+              padding: EdgeInsets.all(0.8.sp),
+            ),
             Expanded(
               child: GridView.builder(
                 scrollDirection: Axis.vertical,
