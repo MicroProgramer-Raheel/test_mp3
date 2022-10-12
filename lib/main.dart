@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:test_mp3/screen_audio.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Future.delayed(Duration(seconds: 2));
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return Sizer(builder: (BuildContext context, Orientation orientation, DeviceType deviceType) {
       return GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'My Kid Play',
+        title: 'Cara Chat',
         theme: ThemeData(
           fontFamily: 'Milky Coffee',
           primarySwatch: appPrimaryColor,
